@@ -27,33 +27,53 @@ public interface gameListener extends ParseTreeListener {
 	 */
 	void exitLine(gameParser.LineContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link gameParser#operacao}.
+	 * Enter a parse tree produced by {@link gameParser#create}.
 	 * @param ctx the parse tree
 	 */
-	void enterOperacao(gameParser.OperacaoContext ctx);
+	void enterCreate(gameParser.CreateContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link gameParser#operacao}.
+	 * Exit a parse tree produced by {@link gameParser#create}.
 	 * @param ctx the parse tree
 	 */
-	void exitOperacao(gameParser.OperacaoContext ctx);
+	void exitCreate(gameParser.CreateContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link gameParser#variavel}.
+	 * Enter a parse tree produced by {@link gameParser#move}.
 	 * @param ctx the parse tree
 	 */
-	void enterVariavel(gameParser.VariavelContext ctx);
+	void enterMove(gameParser.MoveContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link gameParser#variavel}.
+	 * Exit a parse tree produced by {@link gameParser#move}.
 	 * @param ctx the parse tree
 	 */
-	void exitVariavel(gameParser.VariavelContext ctx);
+	void exitMove(gameParser.MoveContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link gameParser#subrotina}.
+	 * Enter a parse tree produced by {@link gameParser#limits}.
 	 * @param ctx the parse tree
 	 */
-	void enterSubrotina(gameParser.SubrotinaContext ctx);
+	void enterLimits(gameParser.LimitsContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link gameParser#subrotina}.
+	 * Exit a parse tree produced by {@link gameParser#limits}.
 	 * @param ctx the parse tree
 	 */
-	void exitSubrotina(gameParser.SubrotinaContext ctx);
+	void exitLimits(gameParser.LimitsContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link gameParser#eixo}.
+	 * @param ctx the parse tree
+	 */
+	void enterEixo(gameParser.EixoContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link gameParser#eixo}.
+	 * @param ctx the parse tree
+	 */
+	void exitEixo(gameParser.EixoContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link gameParser#value}.
+	 * @param ctx the parse tree
+	 */
+	void enterValue(gameParser.ValueContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link gameParser#value}.
+	 * @param ctx the parse tree
+	 */
+	void exitValue(gameParser.ValueContext ctx);
 }

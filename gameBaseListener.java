@@ -39,37 +39,61 @@ public class gameBaseListener implements gameListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterOperacao(gameParser.OperacaoContext ctx) { }
+	@Override public void enterCreate(gameParser.CreateContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitOperacao(gameParser.OperacaoContext ctx) { }
+	@Override public void exitCreate(gameParser.CreateContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterVariavel(gameParser.VariavelContext ctx) { }
+	@Override public void enterMove(gameParser.MoveContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitVariavel(gameParser.VariavelContext ctx) { }
+	@Override public void exitMove(gameParser.MoveContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterSubrotina(gameParser.SubrotinaContext ctx) { }
+	@Override public void enterLimits(gameParser.LimitsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitSubrotina(gameParser.SubrotinaContext ctx) { }
+	@Override public void exitLimits(gameParser.LimitsContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterEixo(gameParser.EixoContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitEixo(gameParser.EixoContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterValue(gameParser.ValueContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitValue(gameParser.ValueContext ctx) { }
 
 	/**
 	 * {@inheritDoc}
